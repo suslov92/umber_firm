@@ -100,9 +100,9 @@ p {
   .img-04 {
     float : right;
   }
-  //.social_facebook{
-    //@include sprites($facebook);
-  //}
+  .social_facebook{
+    @include sprites($facebook);
+  }
 }
 
 @import "includes/responsive";
