@@ -1,0 +1,108 @@
+@import "includes/color";
+@import "includes/fonts";
+@import "../sprites/sprite";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, fieldset, input, p, th, td {
+  margin  : 0;
+  padding : 0;
+}
+
+ol, ul {
+  list-style : none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size : 100%;
+  margin    : 0;
+  padding   : 0;
+}
+
+input, textarea {
+  outline : none;
+}
+
+a {
+  cursor : pointer;
+}
+
+* {
+  transition : all 0.3s;
+}
+
+html, body {
+  color : $font-color;
+}
+
+h5 {
+  font-family   : "MuseoSansCyrl-500", sans-serif;
+  font-size     : 15px;
+  margin-bottom : 10px;
+  margin-top    : 25px;
+}
+
+p {
+  font-size   : 15px;
+  line-height : 25px;
+}
+
+.section-01 {
+  background     : $bg-color;
+  padding-top    : 130px;
+  padding-bottom : 80px;
+  .img-01 {
+    margin : 100px auto 0;
+  }
+  h4 {
+    font-family    : "MuseoSansCyrl-300", sans-serif;
+    font-size      : 22px;
+    text-align     : center;
+    letter-spacing : 5px;
+    margin-top     : 20px;
+  }
+  h1 {
+    font-family    : "CodeProLight", sans-serif;
+    font-weight    : inherit;
+    font-size      : 45px;
+    text-align     : center;
+    letter-spacing : 10px;
+    margin-top     : 5px;
+    margin-bottom  : 80px;
+  }
+  .section-01__text-box {
+    padding-top : 35px;
+  }
+}
+
+.section-02 {
+  padding-top    : 80px;
+  padding-bottom : 20px;
+  .img-02 {
+    float : right;
+  }
+  .section-02__box-01 {
+    margin-top : 50px;
+  }
+  .dnk {
+    font-family : "MuseoSansCyrl-500", sans-serif;
+    font-size   : 20px;
+    text-align  : center;
+    margin-top  : 120px;
+  }
+  .section-02__box-02 {
+    padding-top  : 40px;
+    padding-left : 30px;
+  }
+}
+
+.section-03 {
+  padding-top    : 65px;
+  padding-bottom : 20px;
+  .img-04 {
+    float : right;
+  }
+  //.social_facebook{
+    //@include sprites($facebook);
+  //}
+}
+
+@import "includes/responsive";
