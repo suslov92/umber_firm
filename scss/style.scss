@@ -26,7 +26,10 @@ a {
 }
 
 * {
-  transition : all 0.3s;
+  -webkit-transition : all 0.3s;
+  -moz-transition    : all 0.3s;
+  -o-transition      : all 0.3s;
+  transition         : all 0.3s;
 }
 
 html, body {
@@ -68,7 +71,7 @@ p {
     margin-top     : 5px;
     margin-bottom  : 80px;
   }
-  .section-01__text-box {
+  &__text-box {
     padding-top : 35px;
   }
 }
@@ -79,7 +82,7 @@ p {
   .img-02 {
     float : right;
   }
-  .section-02__box-01 {
+  &__box-01 {
     margin-top : 50px;
   }
   .dnk {
@@ -88,7 +91,7 @@ p {
     text-align  : center;
     margin-top  : 120px;
   }
-  .section-02__box-02 {
+  &__box-02 {
     padding-top  : 40px;
     padding-left : 30px;
   }
@@ -100,9 +103,171 @@ p {
   .img-04 {
     float : right;
   }
-  .social_facebook{
-    @include sprites($facebook);
+  &__box-01 {
+    padding-top : 200px;
+  }
+  .social {
+    li {
+      display       : inline-block;
+      padding-right : 15px;
+      margin-top    : 70px;
+    }
+    &__link {
+      &-facebook {
+        @include sprite($facebook);
+        display : block;
+      }
+      &-vk {
+        @include sprite($vk);
+        display : block;
+      }
+      &-google {
+        @include sprite($google);
+        display : block;
+      }
+    }
   }
 }
 
+.section-04 {
+  padding-top    : 40px;
+  padding-bottom : 60px;
+  h2 {
+    font-family : "Playfair Display", sans-serif;
+    font-size   : 33px;
+    font-weight : 100;
+  }
+  .slider-wrap * {
+    transition : none;
+    .slider-item {
+      img {
+        margin : auto;
+      }
+      .sl-image {
+        min-height : 390px;
+        margin-top : 25px;
+      }
+      .slider-descript {
+        text-align  : center;
+        font-size   : 12px;
+        font-family : "MuseoSansCyrl-100", sans-serif;
+        .descript-name {
+          font-family    : "MuseoSansCyrl-900", sans-serif;
+          letter-spacing : 5px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  border-top  : 1px solid $footer-line;
+  padding-top : 65px;
+  .f-box {
+    &__01 {
+      text-align  : center;
+      padding-top : 90px;
+      .f-que {
+        font-family    : "Museo Sans Cyrl 900", sans-serif;
+        font-size      : 13px;
+        text-transform : uppercase;
+        &__if {
+          margin-top : 3px;
+        }
+        &__phone {
+          margin-top : 3px;
+        }
+      }
+    }
+    &__02 {
+      text-align    : center;
+      display       : block;
+      padding-left  : 50px;
+      padding-right : 50px;
+      .new-coll {
+        padding-top : 60px;
+        font-family : "Playfair Display", sans-serif;
+        font-size   : 33px;
+        line-height : 40px;
+        &__txt {
+          margin-top  : 20px;
+          font-size   : 14px;
+          line-height : 19px;
+        }
+      }
+      &:before {
+        content    : ' ';
+        position   : absolute;
+        left       : 10px;
+        top        : 60px;
+        height     : 275px;
+        width      : 1px;
+        background : $footer-line;
+      }
+    }
+    &__03 {
+      &:after {
+        content    : ' ';
+        position   : absolute;
+        right      : 60px;
+        top        : 60px;
+        height     : 275px;
+        width      : 1px;
+        background : $footer-line;
+      }
+    }
+    &__04 {
+      text-align  : center;
+      padding-top : 60px;
+      .form-email {
+        margin-top : 60px;
+        color      : $form-font;
+        .form-control {
+          text-align : center;
+          height     : 65px;
+          box-shadow : none;
+        }
+        .btn-default {
+          height         : 65px;
+          width          : 100px;
+          background     : $btn-ok;
+          letter-spacing : 5px;
+          font-family    : "Museo Sans Cyrl 700", sans-serif;
+          font-size      : 12px;
+          &:hover {
+            background : transparent;
+          }
+        }
+      }
+    }
+  }
+  .footer-bar {
+    margin-top    : 60px;
+    margin-bottom : 30px;
+  }
+  .copy {
+    float : left;
+  }
+
+  .f-menu {
+    margin-top    : 55px;
+    margin-bottom : 30px;
+    display       : inline;
+    text-align    : right;
+    &__item {
+      display : inline-block;
+      a {
+        padding       : 0 15px;
+        margin-bottom : 15px;
+      }
+    }
+  }
+}
+
+.modal-content {
+  padding : 20px;
+}
+
+@import "includes/slick";
+@import "includes/slick-theme";
 @import "includes/responsive";

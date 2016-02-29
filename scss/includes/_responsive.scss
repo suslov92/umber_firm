@@ -1,10 +1,115 @@
-@media screen and (min-width : 1200px) {
+@media (min-width : 1200px) and (max-width : 1400px) {
+  .container {
+    width : 1170px !important;
+  }
+  .footer {
+    padding-top : 65px;
+    .f-box {
+      &__01 {
+        width       : 280px;
+        padding-top : 90px;
+      }
+      &__02 {
+        padding-left  : 50px;
+        padding-right : 50px;
+        .new-coll {
+          padding-top : 60px;
+          line-height : 40px;
+          &__txt {
+            margin-top  : 20px;
+            line-height : 19px;
+          }
+        }
+        &:before {
+          left : 10px;
+          top  : 60px;
+        }
+      }
+      &__03 {
+        width : 280px;
+        &:after {
+          right : 30px;
+          top   : 60px;
+        }
+      }
+      &__04 {
+        padding-top : 60px;
+        .form-email {
+          margin-top : 60px;
+          .form-control {
+            height : 65px;
+          }
+          .btn-default {
+            height         : 65px;
+            width          : 100px;
+            letter-spacing : 5px;
+            font-size      : 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width : 1200px) {
-}
+  .section-03 {
+    padding-top : 50px;
+    &__box-01 {
+      padding-top : 50px;
+    }
+  }
 
-@media screen and (max-width : 1202px) {
+  .footer {
+    padding-top : 40px;
+    .f-box {
+      &__01 {
+        text-align  : center;
+        padding-top : 0;
+      }
+      &__02 {
+        padding-left  : 50px;
+        padding-right : 50px;
+        .new-coll {
+          padding-top : 0;
+          font-size   : 33px;
+          &__txt {
+            margin-top  : 20px;
+            line-height : 19px;
+          }
+        }
+        &:before {
+          display : none;
+        }
+      }
+      &__03 {
+        img {
+          display : block;
+          margin  : auto;
+        }
+        &:after {
+          display : none;
+        }
+      }
+      &__04 {
+        padding-top : 60px;
+        .form-email {
+          margin-top : 60px;
+          .form-control {
+            text-align : center;
+            height     : 65px;
+            box-shadow : none;
+          }
+          .btn-default {
+            height         : 65px;
+            width          : 100px;
+            letter-spacing : 5px;
+            font-size      : 12px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width : 1200px) {
@@ -45,10 +150,69 @@
     }
   }
 
-  .section-03{
-    .img-04{
+  .section-03 {
+    .img-04 {
       float  : none;
       margin : auto;
+    }
+    &__box-01 {
+      padding-top : 20px;
+    }
+    .social {
+      li {
+        margin-top : 20px;
+      }
+    }
+  }
+
+  .footer {
+    padding-top : 40px;
+    .f-box {
+      &__01 {
+        text-align  : center;
+        padding-top : 0;
+      }
+      &__02 {
+        padding-left  : 50px;
+        padding-right : 50px;
+        .new-coll {
+          padding-top : 30px;
+          font-size   : 33px;
+          &__txt {
+            margin-top  : 20px;
+            line-height : 19px;
+          }
+        }
+        &:before {
+          display : none;
+        }
+      }
+      &__03 {
+        img {
+          display : block;
+          margin  : 30px auto 0;
+        }
+        &:after {
+          display : none;
+        }
+      }
+      &__04 {
+        padding-top : 30px;
+        .form-email {
+          margin-top : 30px;
+          .form-control {
+            text-align : center;
+            height     : 65px;
+            box-shadow : none;
+          }
+          .btn-default {
+            height         : 65px;
+            width          : 100px;
+            letter-spacing : 5px;
+            font-size      : 12px;
+          }
+        }
+      }
     }
   }
 
@@ -60,7 +224,29 @@
       margin-top : 25px;
     }
   }
+  .footer {
+    .footer-bar {
+      margin-top : 30px;
+      .copy {
+        text-align : center;
+        float      : none;
+      }
+      .f-menu {
+        margin-top    : 20px;
+        margin-bottom : 30px;
+        display       : block;
+        text-align    : center;
+      }
+    }
+  }
 }
 
 @media screen and (max-width : 480px) {
+  .section-04 {
+    padding-top    : 40px;
+    padding-bottom : 60px;
+    h2 {
+      font-size : 27px;
+    }
+  }
 }
